@@ -1,0 +1,13 @@
+body, html{
+	height:100%;
+	margin:0;
+}
+
+body{
+	display: grid;
+	justify-content: center;
+}
+
+#bm{
+	width: 250px;
+}

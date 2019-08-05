@@ -1,0 +1,214 @@
+body,h1,h2,h3,h4,h5,h6 {
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+body, html {
+    height: 100%;
+    font-size:18px;
+
+}
+
+.miembro{
+    color:orange;
+}
+
+.titulo{
+    color:#0054a1;
+}
+
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}  
+
+.w3-background {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+    background: #00001d; /* Old browsers */
+    background: -moz-linear-gradient(top, #00001d 7%, #00001d 7%, #00002b 24%, #00002b 24%, #00224c 52%, #2cacf4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #00001d 7%,#00001d 7%,#00002b 24%,#00002b 24%,#00224c 52%,#2cacf4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #00001d 7%,#00001d 7%,#00002b 24%,#00002b 24%,#00224c 52%,#2cacf4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00001d', endColorstr='#2cacf4',GradientType=0 ); /* IE6-9 */
+}  
+
+
+.bgimg-retreat {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/menu-retreat.png");
+
+}  
+.bgimg-3 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/footer.png");
+    height: 100px;
+}  
+.bgimg-footer-retreat {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/footer-retreat.png");
+    height: 100px;
+}  
+.bgimg-4 {
+    background-position: right;
+    background-size: cover;
+    background-image: url("../img/lighthouse.png");
+    width: 100%;
+    height: 22%;
+}  
+
+.bgprograma {
+    background-image: url("../img/neuron.png");
+
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+ 
+}  
+
+.w3-logo {
+    background-position: center;
+    background-image: url("../img/overlays/logo-white.png");
+    height: 100px;
+
+}  
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.w3-half{
+    text-align:left;
+    padding: 30px;
+}
+
+.w3-row-padding, .w3-row-padding>.w3-half, .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird, .w3-row-padding>.w3-threequarter, .w3-row-padding>.w3-quarter, .w3-row-padding>.w3-col {
+    padding: 0 30px;
+}
+
+
+.w3-large {
+    font-size: 38px!important;
+}
+
+
+.w3-card {
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.w3-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.w3-card-2 {
+        box-shadow: 0 0px 0px 0 rgba(0,0,0,0);
+        height: 100px;
+
+}
+
+
+
+.w3-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.w3-animate-titulo{animation:opac1 3s} 
+@keyframes opac1{0%     { opacity:0; }
+                100%   { opacity:1; }}
+.w3-animate-logo{animation:opac2 4s} 
+@keyframes opac2{0%     { opacity:0; }
+                50%    { opacity:0; }
+                100%   { opacity:1; }}
+.w3-animate-subtitulo{animation:opac3 5s} 
+@keyframes opac3{0%     { opacity:0; }
+                50%    { opacity:0; }
+                100%   { opacity:1; }}
+
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+ position: static;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: static;
+  width: 100%;
+  bottom: 0;
+
+  color: #f1f1f1;
+      background-image: url("../img/square-video.png");
+    background-position: center;
+    background-size: cover;
+    margin-top: -20px;
+
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  margin:10px;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+* {box-sizing: border-box;}
+
+
+
+.quote{
+  font-family: 'Caudex', serif;
+  font-size: 28px;
+
+}
+
+body{
+  background-color: #ffffff;
+}
+
+.bodymovin-logo{
+  position: absolute;
+  z-index: -1;
+  height:100%;
+  width:100%;
+}
+
+@media only screen and (orientation: landscape) {
+
+.bodymovin-logo{
+  position: absolute;
+  z-index: -1;
+  width:100%;
+
+}
+}
+
+.cambio-menu{
+    background: #000000ab;
+    transition: all 1s ease;
+    box-shadow: 2px 2px 1px #d8d8d8;
+
+}
