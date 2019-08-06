@@ -312,14 +312,22 @@ function myFunction() {
 
 <!-- cambio de color el menu cuando scrolleo -->
 <script>
-  var height_img = $("#index").outerHeight();
+    let animation = bodymovin.loadAnimation({
+         container: bodyMotion1,
+         renderer: "svg",
+         loop: 1,
+         autoplay: true,
+         path: "logo.json"
+     });
+     
+    var height_img = $("#index").outerHeight();
     var height_menu = $("#menu").outerHeight();
     var valor = height_img - height_menu
     console.log("el top de la img es :" + valor);
     $(window).scroll(function() {
       if ($("#menu").offset().top > valor) {
           $("#menu").addClass("cambio-menu");
-          loader(bodyMotion1, "logo.json");
+          animation.play();
       } else {
           $("#menu").removeClass("cambio-menu");
       }
