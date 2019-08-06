@@ -1,56 +1,349 @@
 <!DOCTYPE html>
 <html>
-<title>Insights Beacon</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/w3.css">
-<link rel="stylesheet" href="style/style-site.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+<head>
+    <title>geeknaco - soluciones inform</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/w3.css">
+    <link rel="stylesheet" href="style/style-site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caudex" rel="stylesheet">
+    <link rel="icon" href="icon.png">
+ 
+
+</head>
+
+
+<body>
+<div class="w3-top" id="menu">
+<!-- Menú -->
+  <div class="w3-card-2 bgimg-2 w3-padding-12"  id="myNavbar">
+    <img href="index.html" src="icon.png" alt="INSIGHTS BEACON" style="padding-top: 30px; margin-left:30px;height:60px; position:fixed;">
+
+    <div class="w3-right w3-hide-small w3-hide-medium w3-padding-24">
+      <a href="#index" class="w3-bar-item w3-button w3-text-white w3-hover-orange">Home</a>
+      <a href="#company" class="w3-bar-item w3-button w3-text-white w3-hover-orange">Qué hacemos</a>
+      <a href="#productos" class="w3-bar-item w3-button w3-text-white w3-hover-orange">Cómo lo hacemos</a>
+      <a href="#partners" class="w3-bar-item w3-button w3-text-white w3-hover-orange">Quiénes somos</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-text-white w3-button w3-right w3-hide-large w3-hover-orange" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Menú sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-smallw3-padding-16">Close ×</a>
+  <a href="#index" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#company" onclick="w3_close()" class="w3-bar-item w3-button">Qué hacemos</a>
+  <a href="#productos" onclick="w3_close()" class="w3-bar-item w3-button">Cómo lo hacemos</a>
+  <a href="#partners" onclick="w3_close()" class="w3-bar-item w3-button">Quienes somos</a>
+</nav>
+
+<!-- Home -->
+<header class="bgimg-1 w3-display-container " id="index">
+
+<div class="bodymovin-logo" data-icon="intro-horizontal.json"></div>
+</header>
+
+
+
+<!-- Servicios -->
+<div class="w3-container w3-padding-64" id="productos">
+
+    <div class="w3-container w3-row w3-row-padding w3-center">
+      <p class="w3-large"><b>Servicios</b></p>
+      
+      <div class="w3-third" style="min-width: 200px">
+        <div class="w3-card" style="padding:20px; ">  
+        <div class="bodymovin-loop" data-icon="https://assets10.lottiefiles.com/temp/lf20_qeyVQd.json" style="width:100%;"></div>
+          <div class="container">
+            <h4>Consultoría</h4>
+            <p>Análisis y mejora de procesos</p>
+          </div>
+        </div>
+      </div>
+   
+  
+  
+      <div class="w3-third" style="min-width: 200px">
+        <div class="w3-card" style="padding:20px; ">  
+        <div class="bodymovin-loop" data-icon="https://assets10.lottiefiles.com/temp/lf20_qeyVQd.json" style="width:100%;"></div>
+          <div class="container">
+            <h4>Desarollo</h4> 
+            <p>Web - Mobile - Integraciones - Ecommerce - Mantenimiento - Optimización - Migraciones
+              </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="w3-third" style="min-width: 200px">
+          <div class="" style="min-width: 200px">
+        <div class="w3-card" style="padding:20px; ">  
+        <div class="bodymovin-loop" data-icon="https://assets2.lottiefiles.com/temp/lf20_csjVxr.json" style="width:100%;"></div>
+          <div class="container">
+            <h4>Diseño</h4> 
+            <p>User interface -
+                User experience
+                </p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  </div>
+  
+  
+  
+  <!-- ¿Por qué elegirnos?  -->
+  
+  <div class="w3-container w3-center">
+    <div>
+        <p class="w3-large"><b>¿Por qué elegirnos?</b></p>
+          
+        <p style="padding: 40px">Trabajamos de acuerdo a las necesidades del cliente. 
+          Nos apasiona lo que hacemos y estamos aquí para proveer soluciones que se adapten a su empresa.</p> 
+  
+        <p>Porque la relación con nuestros clientes es a largo plazo</p>
+  
+        <p>Uno de nuestros pilares es poder brindar valor agregado a nuestros clientes, pero sabemos que el valor no se agrega de un día para el otro. 
+          Es por eso que desde un principio nos involucramos en su realidad comercial de negocio. 
+          Intentamos facilitar su recorrido brindándole las herramientas adecuadas, y proveyendo soporte y asesoramiento para que pueda utilizar al máximo sus beneficios.
+          </p>
+  
+        <p>No ofrecemos solo sistemas, geeknaco brinda soluciones</p>
+  </div>
+  
+  <div class="w3-container w3-center">
+      <div>
+          <p class="w3-large"><b>¿Cómo trabajamos?</b></p>
+            
+          <p style="padding: 40px">Con metodologías ágiles nos aseguramos en conseguir un claro enfoque en el cliente teniendo en cuenta las exigencias del mercado. </p> 
+          <img src="/images/Metodologia-agile (1).png" alt="" class="src">
+  
+          <p>Esto nos permite:</p>
+  
+          <p>Entregar valor lo mas rapido posible</p>
+          <p>Proximidad con el cliente</p>
+          <p>Respuesta rápida ante cambios</p>
+          <p>Versatilidad y transparencia</p>
+          <p>Mayor calidad en el producto final</p>
+          <p>Reducción de riestos</p>
+       
+    </div>
+  </div>
+  
+  <!-- Contactos  -->
+  <div class="w3-container" style="padding:80px 16px" id="contact">
+    <p class="w3-large w3-center"><b>Contactanos!</b></p>
+    <div class="w3-row-padding">
+  
+  
+      <div class="w3-center">
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input " type="text" placeholder="Name" required name="Nombre"></p>
+          <p><input class="w3-input " type="text" placeholder="Company" required name="Empresa"></p>
+          <p><input class="w3-input " type="text" placeholder="Email" required name="Email"></p>
+          <p><input class="w3-input " type="text" placeholder="Message" required name="Mensaje"></p>
+          <p>
+          <button class="w3-button w3-black" type="submit" onclick="enviarMail()">
+            <i class="fa fa-paper-plane"></i> Enviar
+          </button>
+          </p>
+        </form>
+      </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-center bgimg-3">
+  <a href="#home" class=" w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>Start</a>
+</footer>
+ 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 
 <script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 300, function(){
-           window.location.hash = hash;
-      });
-    } 
-  });
-});
-</script>
+var mySidebar = document.getElementById("mySidebar");
 
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#home").fadeIn();
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+
+
+</script>
+  <script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 300, function(){
+             window.location.hash = hash;
+        });
+      } 
     });
-});
+  });
+  </script>
+  
+  <script>
+  $(document).ready(function(){
+      $("button").click(function(){
+          $("#home").fadeIn();
+      });
+  });
+  </script>
+  
+  <script src="bodymovin.js"></script>
+  <script src="index.js"></script>
+  
+      <script type="text/javascript">
+          $(function() {
+              $('.bodymovin').each(function() {
+                  var element = $(this);
+                  var animation = bodymovin.loadAnimation({
+                      container: element[0],
+                      renderer: 'svg',
+                      rendererSettings: {preserveAspectRatio: 'none' },
+                      loop: false,
+                      autoplay: true,
+                      path: element.data('icon')
+                  });
+              });
+          });
+  
+  
+          $(function() {
+              $('.bodymovin-loop').each(function() {
+                  var element = $(this);
+                  var animation = bodymovin.loadAnimation({
+                      container: element[0],
+                      renderer: 'svg',
+                      rendererSettings: {preserveAspectRatio: 'none' },
+                      loop: true,
+                      autoplay: true,
+                      path: element.data('icon')
+                  });
+              });
+          });
+  
+  
+          $(function() {
+              $('.bodymovin-logo').each(function() {
+                  var element = $(this);
+                  var animation = bodymovin.loadAnimation({
+                      container: element[0],
+                      rendererSettings: {preserveAspectRatio: 'xMidYMid slice' },
+  
+                      renderer: 'svg',
+                      loop: false,
+                      autoplay: true,
+                      path: element.data('icon')
+                  });
+              });
+          });
+  
+  
+      </script>
+  
+  
+  <!-- Scroll into view illustration 1 -->
+  <script>
+  // sets default vlaue of surrounding div to none so it doesnt appear
+  let animationDiv = document.getElementById('scrollingArea')
+  animationDiv.style.display = "none"
+  ‍
+  // need to pass in the div where you want the item to load and the file location
+  function loader(div, pathLocation) {
+     let animation = bodymovin.loadAnimation({
+         container: div,
+         renderer: "svg",
+         loop: 1,
+         autoplay: true,
+         path: pathLocation
+     });
+     animation.play();
+  }
+  window.addEventListener('scroll', () => {
+     // can set scroll height by changing the number
+     let scrollHeightPercent = document.documentElement.scrollHeight * 0.08
+     let currentPOS = document.documentElement.scrollTop || document.body.scrollTop
+         // once the scroll height has gone past the % stated abvoe it will make the style appear
+     if (currentPOS >= scrollHeightPercent) {
+         let animationDiv = document.getElementById('scrollingArea');
+         if (animationDiv.style.display == 'none') {
+             // stuff here
+             animationDiv.style.display= ""
+             let bodyMotion1 = document.getElementById('lottie-scroll-1');
+             loader(bodyMotion1, "logo.json")
+         };
+     };
+  });
+  </script>
+
+<!-- cambio de color el menu cuando scrolleo -->
+<script>
+    var height_img = $("#index").outerHeight();
+    var height_menu = $("#menu").outerHeight();
+    var valor = height_img - height_menu
+    console.log("el top de la img es :" + valor);
+    $(window).scroll(function() {
+      if ($("#menu").offset().top > valor) {
+          $("#menu").addClass("cambio-menu");
+      } else {
+          $("#menu").removeClass("cambio-menu");
+      }
+    });
 </script>
 
-<style>
+<!-- agrego la libreria SMTP para enviar mails -->
 
-</style>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+function enviarMail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "geeknaco@gmail.com",
+    Password : "4e114568-5104-4dc1-bf2f-882e4c24d587",
+    To : 'info@geeknaco.com.ar',
+    From : "ivan@geeknaco.com.ar",
+    Subject : "This is the subject",
+    Body : "esto es una prueba"
+}).then(
+  message => alert(message)
+);
+}
 
-<body>
 
-
-<!-- Home -->
-<header class="bgimg-1 w3-display-container w3-background" id="home">
-
-  <div class="w3-display-middle w3-center w3-animate-titulo ">
-    <img src="img/overlays/logo-white.png" style="width:40%;margin: 40px"><br>
-    
-    <a href="spanish.html" class="w3-bar-item w3-button w3-text-white w3-hover-orange">Español</a>
-    <a href="english.html" class="w3-bar-item w3-button w3-text-white w3-hover-orange">English</a>
-  </div>
-  <div class="w3-display-bottomleft w3-text-white w3-large bgimg-4" style="width:100%"></div>
-</header>
-
+</script>
+  
 </body>
 </html>
