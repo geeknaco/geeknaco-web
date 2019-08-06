@@ -149,7 +149,7 @@
           <p><input class="w3-input " type="text" placeholder="Email" required name="Email"></p>
           <p><input class="w3-input " type="text" placeholder="Message" required name="Mensaje"></p>
           <p>
-          <button class="w3-button w3-black" type="submit">
+          <button class="w3-button w3-black" type="submit" onclick="enviarMail()">
             <i class="fa fa-paper-plane"></i> Enviar
           </button>
           </p>
@@ -310,7 +310,6 @@ function myFunction() {
   </script>
 
 <!-- cambio de color el menu cuando scrolleo -->
-
 <script>
     var height_img = $("#index").outerHeight();
     var height_menu = $("#menu").outerHeight();
@@ -324,5 +323,27 @@ function myFunction() {
       }
     });
 </script>
+
+<!-- agrego la libreria SMTP para enviar mails -->
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+function enviarMail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "geeknaco@gmail.com",
+    Password : "4e114568-5104-4dc1-bf2f-882e4c24d587",
+    To : 'info@geeknaco.com.ar',
+    From : "ivan@geeknaco.com.ar",
+    Subject : "This is the subject",
+    Body : "esto es una prueba"
+}).then(
+  message => alert(message)
+);
+}
+
+
+</script>
+  
 </body>
 </html>
